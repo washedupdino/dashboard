@@ -5,7 +5,7 @@
 - [ ] light and dark mode switch
 
 # todo list
-- [ ]todo component
+- [ ] todo component
   - [ ] add new
   - [ ] mark as done
   - [ ] delete
@@ -28,4 +28,5 @@
 - [ ] create sticky notes
 - [ ] figure out how to move them around
 
+# final touches
 - [ ] authentication
