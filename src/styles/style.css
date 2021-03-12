@@ -1,1 +1,97 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+header {
+  padding: 2rem 0;
+  display: inline-block;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  text-align: center;
+}
+
+html .dark {
+  background-color: #282c34;
+  color: #fff;
+}
+
+html .light {
+  background-color: #fbfaf5;
+  color: #1f1f1f;
+}
+
+.light .widget {
+  background-color: #fff;
+}
+
+.light .widget h2 {
+  color: #1f1f1f;
+}
+
+.dark .widget {
+  background-color: #373d48;
+}
+
+.dark .widget h2 {
+  color: #fff;
+}
+
+.container {
+  height: 85vh;
+  margin: 0 5%;
+  padding: 5% 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
+  -ms-grid-rows: (1fr)[6];
+      grid-template-rows: repeat(6, 1fr);
+  -webkit-column-gap: 1rem;
+          column-gap: 1rem;
+  row-gap: 1rem;
+  justify-items: stretch;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.container #weather {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1 / span 3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1 / span 2;
+}
+
+.container #scores {
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 3;
+  grid-column: 4 / span 3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1 / span 2;
+}
+
+.container #stickies {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1 / span 3;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 4;
+  grid-row: 3 / span 4;
+}
+
+.container #todos {
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 3;
+  grid-column: 4 / span 3;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 4;
+  grid-row: 3 / span 4;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,7 +1,7 @@
-- [ ] Create color palette
-  - [ ] light and dark
-- [ ] import css to app
-- [ ] create basic empty containers in a 2x2 grid
+- [x] Create color palette
+  - [x] light and dark
+- [x] import css to app
+- [x] create basic empty containers in a 2x2 grid
 - [ ] light and dark mode switch
 
 # todo list
