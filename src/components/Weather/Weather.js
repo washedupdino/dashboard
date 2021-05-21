@@ -2,13 +2,16 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 // import './weather.scss';
 
+const url =
+	'https://api.openweathermap.org/data/2.5/weather?id=6174041&units=metric&appid=b25db558da21c38f6f9e4e81fd7584e3';
+
 const Weather = () => {
 	const [weather, setWeather] = useState('');
 	const [isLoading, setIsLoading] = useState(true);
 
 	const getCurrentWeather = () => {
 		axios
-			// .get(url)
+			.get(url)
 			.then(result => {
 				setWeather(result.data);
 				setIsLoading(false);
