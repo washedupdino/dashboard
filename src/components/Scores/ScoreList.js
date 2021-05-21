@@ -4,14 +4,6 @@ import moment from 'moment';
 import axios from 'axios';
 
 const today = moment().format('YYYY-MM-DD');
-// const options = {
-// 	method: 'GET',
-// 	url: `https://api-nba-v1.p.rapidapi.com/games/date/${today}`,
-// 	headers: {
-// 		'x-rapidapi-key': '7d705d3e9emshe0b7f383ba09823p1612edjsnba9da2967b0b',
-// 		'x-rapidapi-host': 'api-nba-v1.p.rapidapi.com',
-// 	},
-// };
 
 const allGames = [
 	{
