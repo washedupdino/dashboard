@@ -2,25 +2,26 @@
   - [x] light and dark
 - [x] import css to app
 - [x] create basic empty containers in a 2x2 grid
-- [ ] light and dark mode switch
+- [x] light and dark mode switch
 
 # todo list
-- [ ] todo component
-  - [ ] add new
-  - [ ] mark as done
-  - [ ] delete
-- [ ] todo container
-  - [ ] undone and done section
+- [x] todo component
+  - [x] mark as done
+  - [x] delete
+  - [x] id
+- [x] todo container
+  - [x] add new
+  - [x] undone and done section
 
 # [weather widget](https://openweathermap.org/current)
-- [ ] initialize api key and query
-- [ ] svg based on current weather
-- [ ] display date, time, and location
+- [x] initialize api key and query
+- [x] svg based on current weather
+- [x] display date, time, and location
 
 # [nba widget](https://rapidapi.com/api-sports/api/api-nba/pricing)
-- [ ] initialize api key and query
-- [ ] game component
-- [ ] widget component
+- [x] initialize api key and query
+- [x] game component
+- [x] widget component
 - [ ] scrollable to include the previous 10 games
 
 # [sticky notes](https://github.com/atlassian/react-beautiful-dnd/blob/master/docs/about/installation.md)

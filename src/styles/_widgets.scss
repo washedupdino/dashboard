@@ -1,0 +1,125 @@
+.light .widget {
+	background-color: $light-widget;
+	h2 {
+		background-color: $dark-widget;
+		color: $light-text;
+	}
+}
+
+.dark .widget {
+	background-color: $dark-widget;
+	h2 {
+		background-color: $light-widget;
+		color: $dark-text;
+	}
+}
+
+.widget-container {
+	height: 85vh;
+	margin: 0 12%;
+}
+
+.container {
+	height: 100%;
+	padding-bottom: 2rem;
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	column-gap: 1rem;
+	row-gap: 1rem;
+	#weather {
+		grid-column: 1 / span 2;
+		grid-row: 1 / span 1;
+	}
+	#scores {
+		grid-column: 1 / span 2;
+		grid-row: 2 / span 1;
+	}
+	// #stickies {
+	// 	grid-column: 2 / span 2;
+	// 	grid-row: 1 / span 2;
+	// }
+	#todos {
+		grid-column: 3 / span 4;
+		grid-row: 1 / span 2;
+	}
+}
+
+.widget {
+	position: relative;
+	border-radius: 12px;
+	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+	h2 {
+		text-transform: uppercase;
+		padding: 0.25rem 0;
+		font-size: 1.25rem;
+	}
+}
+
+.ribbon4 {
+	min-width: 120px;
+	position: absolute;
+	top: 15px;
+	left: -1px;
+	padding: 8px 10px;
+	background: $dark-accent;
+	box-shadow: -1px 2px 3px rgba(0, 0, 0, 0.3);
+	color: $dark-text;
+	font-weight: bold;
+}
+.ribbon4:before,
+.ribbon4:after {
+	content: '';
+	position: absolute;
+}
+.ribbon4:before {
+	width: 7px;
+	height: 100%;
+	top: 0;
+	left: -6.5px;
+	padding: 0 0 7px;
+	background: inherit;
+	border-radius: 5px 0 0 5px;
+}
+.ribbon4:after {
+	width: 5px;
+	height: 5px;
+	bottom: -5px;
+	left: -4.5px;
+	background: hsl(51, 90%, 30%);
+	border-radius: 5px 0 0 5px;
+}
+
+.ribbon5 {
+	min-width: 120px;
+	position: absolute;
+	top: 15px;
+	right: 0;
+	padding: 8px 10px;
+	background: $dark-accent;
+	box-shadow: -1px 2px 3px rgba(0, 0, 0, 0.3);
+	color: $dark-text;
+	font-weight: bold;
+}
+.ribbon5:before,
+.ribbon5:after {
+	content: '';
+	position: absolute;
+}
+.ribbon5:before {
+	width: 7px;
+	height: 100%;
+	top: 0;
+	right: -6.5px;
+	padding: 0 0 7px;
+	background: inherit;
+	border-radius: 0 5px 5px 0;
+}
+.ribbon5:after {
+	width: 5px;
+	height: 5px;
+	bottom: -5px;
+	right: -4.5px;
+	background: hsl(51, 90%, 30%);
+	border-radius: 0 5px 5px 0;
+}

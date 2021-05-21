@@ -1,65 +1,27 @@
 @import './variables';
 @import './header';
+@import './widgets';
+@import './weather';
+@import './score';
+@import './todos';
 
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
 }
 
 html {
 	text-align: center;
 	.dark {
+		height: 100vh;
 		background-color: $dark-bg;
 		color: $light-text;
 	}
 	.light {
+		height: 100vh;
 		background-color: $light-bg;
 		color: $dark-text;
-	}
-}
-
-.light .widget {
-	background-color: $light-widget;
-	h2 {
-		color: $dark-text;
-	}
-}
-
-.dark .widget {
-	// height: 200px;
-	// width: 200px;
-	background-color: $dark-widget;
-	h2 {
-		color: $light-text;
-	}
-}
-
-.container {
-	height: 85vh;
-	margin: 0 5%;
-	padding: 5% 0;
-	display: grid;
-	grid-template-columns: repeat(6, 1fr);
-	grid-template-rows: repeat(6, 1fr);
-	column-gap: 1rem;
-	row-gap: 1rem;
-	justify-items: stretch;
-	align-items: stretch;
-	#weather {
-		grid-column: 1 / span 3;
-		grid-row: 1 / span 2;
-	}
-	#scores {
-		grid-column: 4 / span 3;
-		grid-row: 1 / span 2;
-	}
-	#stickies {
-		grid-column: 1 / span 3;
-		grid-row: 3 / span 4;
-	}
-	#todos {
-		grid-column: 4 / span 3;
-		grid-row: 3 / span 4;
 	}
 }

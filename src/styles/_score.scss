@@ -1,0 +1,63 @@
+#game {
+	display: flex;
+	align-items: center;
+	font-weight: bold;
+}
+.dark {
+	#game {
+		border-bottom: 1px solid white;
+	}
+}
+
+.light {
+	#game {
+		border-bottom: 1px solid black;
+	}
+}
+
+#teams {
+	width: 50%;
+	p {
+		padding: 0.12rem 0;
+		color: black;
+	}
+	:first-child {
+		background-color: darkgrey;
+	}
+	:last-child {
+		background-color: grey;
+	}
+}
+
+#team-scores {
+	width: 30%;
+	p {
+		padding: 0.12rem 0;
+		color: black;
+	}
+	:first-child {
+		background-color: darkgrey;
+	}
+	:last-child {
+		background-color: grey;
+	}
+}
+
+#game-time {
+	width: 20%;
+	height: 100%;
+	font-size: 14px;
+}
+.dark {
+	.scores {
+		border-top: 1px solid white;
+	}
+}
+.light {
+	.scores {
+		border-top: 1px solid black;
+	}
+}
+.scores {
+	margin-top: 20%;
+}
