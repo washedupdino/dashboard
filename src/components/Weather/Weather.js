@@ -8,7 +8,7 @@ const Weather = () => {
 
 	const getCurrentWeather = () => {
 		axios
-			.get(url)
+			// .get(url)
 			.then(result => {
 				setWeather(result.data);
 				setIsLoading(false);
